@@ -781,7 +781,6 @@
 	}
 	.logo {
 		float: left;
-		margin: 20px 0 20px;
 		position: relative;
 		left: 0;
 		width: 100%;
@@ -861,7 +860,7 @@
        margin-bottom: 20px;
     }
 	h4 {
-		font-size: 16px;
+		font-size: 25px;
 	}
 	.padding_75 {
 		padding: 40px 20px;
@@ -1439,7 +1438,7 @@
 		width: 100%;
 	}
 	.logo img {
-		width: 150px;
+		width: 170px;
 	}
 	.cleaning .logo img {
        height: auto;
