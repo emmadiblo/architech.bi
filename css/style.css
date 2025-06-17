@@ -220,6 +220,10 @@ a,
 
 a.btn,
 button.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	min-width: 100px;
 	height: 45px;
 	border-radius: 100px;
@@ -786,11 +790,54 @@ hr.dottad_border {
 	margin-right: 0;
 }
 
-.icon img {
-	width: 130px;
+.center img {
+	width: 300px;
+	height: 200px;
+}
+
+#services .card{
+	border-radius: 30px;
+	margin-bottom: 15px;
+
+}
+
+.liste{
+	text-align: left;
+
+	
+
+}
+
+.liste i{
+	background-color: var(--color-primary);
+	color: var(--white);
+	border-radius: 50%;
+	padding: 5px;
+	margin-right: 5px;
 }
 
 
+
+.liste li{
+	font-weight: bold;
+	margin-bottom: 15px;
+	
+}
+
+.liste li:hover{
+color: var(--light-blue);
+cursor: pointer;
+
+}
+
+#sell {
+  
+    display: -ms-flexbox;
+    display: flex !important;
+ flex-wrap: nowrap;
+  margin-right: 0 !important; 
+   margin-left: 0 !important; 
+}
 /*------------------------------------------------------------------
 		4. LOADER
 	-------------------------------------------------------------------*/
@@ -953,7 +1000,7 @@ header .right_bt .btn {
 
 
 .logo img {
-	height: 160px;
+	height: 120px;
 }
 
 .header_style_1 .header_top {
@@ -965,6 +1012,9 @@ header .right_bt .btn {
 }
 
 .make_appo .btn.white_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0;
 	border-radius: 0;
 	font-weight: 600;
@@ -984,7 +1034,7 @@ header .right_bt .btn {
 
 
 .header_top ul li {
-	font-size:20px;
+
 	color: var(--white);
 	float: left;
 	margin-right: 20px;
@@ -3306,51 +3356,6 @@ span.skill {
 	margin: 10px 0 15px 0;
 }
 
-.contact_us_section .call_icon {
-	float: left;
-	width: 7%;
-}
-
-.contact_us_section .inner_cont {
-	float: left;
-	width: 63%;
-}
-
-.contact_us_section {
-	padding: 40px 50px;
-	margin-top: -75px;
-	float: left;
-	width: 100%;
-}
-
-.contact_us_section h2 {
-	margin: 8px 0 5px 0;
-	font-size: 35px;
-	font-weight: 700;
-	color: var(--white);
-}
-
-.contact_us_section p {
-	margin: 0;
-	color: var(--white);
-}
-
-.contact_us_section .button_Section_cont {
-	width: 30%;
-	float: right;
-}
-
-.contact_us_section .button_Section_cont a {
-	float: right;
-	border: none;
-}
-
-.contact_us_section .btn.dark_gray_bt:hover,
-.contact_us_section .btn.dark_gray_bt:focus {
-	background: var(--white);
-	color: #252525;
-	text-shadow: none;
-}
 
 .brand_list li {
 	float: left;
@@ -4563,7 +4568,127 @@ span.skill {
 	margin-top: 35px;
 }
 
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	
+	overflow: hidden;
+}
+.carousel .thumb-wrapper {
+	padding: 25px 15px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.carousel .item .img-box {
+	height: 120px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	background: #7ac400;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #78bf00;
+	opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -2px;
+}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.carousel .wish-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 99;
+	cursor: pointer;
+	font-size: 16px;
+	color: #abb0b8;
+}
+.carousel .wish-icon .fa-heart {
+	color: #ff6161;
+}
 
 
+#contact{
+	background-color: var(--black);
+	
+}
 
+#contact h3, .map p{
+color: var(--light-blue) !important;
+}
 
+.buttons{
+	display: flex !important;
+	justify-content: space-around;
+}
