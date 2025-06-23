@@ -62,6 +62,7 @@ footer ul.social_icons li a:hover,
 footer ul.social_icons li a:focus,
 .breadcrumb li a {
     color: var(--color-primary);
+	border-bottom: var(--light-blue) 2px solid;
 }
 
 .btn.sqaure_bt {
